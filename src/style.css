@@ -45,7 +45,11 @@ li:first-letter {
   font-weight: 400;
   line-height: 1;
 }
-
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -30px;
+}
 .footer {
   color: #878787;
   font-size: 16px;
