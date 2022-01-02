@@ -18,7 +18,7 @@ ul {
 }
 li {
   list-style: none;
-  color: #5dacbd;
+  color: #5e87b8;
   font-size: 16px;
   line-height: 19px;
   font-weight: 100;
@@ -58,13 +58,14 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -30px;
-  color: #5dacbd;
+  color: #5e87b8;
 }
 
 .btn {
   background: #f76b8a;
   border: #f76b8a;
 }
+
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
@@ -81,7 +82,7 @@ li:first-letter {
   opacity: 0.5;
 }
 .footer {
-  color: #5dacbd;
+  color: #5e87b8;
   font-size: 16px;
   line-height: 19px;
 }
