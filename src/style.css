@@ -32,13 +32,16 @@ li:first-letter {
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #5dacbd;
+  border: 1px solid #24527a;
   border-radius: 10px;
   background: radial-gradient(
     827px at 47.3% 48%,
     rgb(255, 255, 255) 0%,
     rgb(138, 192, 216) 90%
   );
+}
+.form-control {
+  border: 1px solid #5e87b8;
 }
 .overview {
   margin-bottom: 20px;
