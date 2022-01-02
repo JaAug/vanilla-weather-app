@@ -65,6 +65,21 @@ li:first-letter {
   background: #f76b8a;
   border: #f76b8a;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #24527a;
+}
+.weather-forecast-temps {
+  font-size: 13px;
+  color: #24527a;
+}
+.forecast-min-temp {
+  opacity: 0.5;
+}
 .footer {
   color: #5dacbd;
   font-size: 16px;
