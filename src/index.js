@@ -12,7 +12,23 @@ function formatDate(timestamp) {
   }
   return `${weekday}, ${hours}:${minutes}`;
 }
-
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `<div class="weather-forecast">
+            <div class="col-2">
+              <div class="weather-forecast-date">Fri</div>
+              <img
+                src="https://openweathermap.org/img/wn/50d@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temps">
+                <span class="forecast-max-temp">18°</span>
+                <span class="forecast-min-temp">12°</span>
+              </div>
+            </div>
+          </div>`;
+}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -32,7 +48,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
@@ -74,3 +90,4 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
 search("Hanover");
+displayForecast();
